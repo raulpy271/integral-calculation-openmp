@@ -1,10 +1,9 @@
 
 # Calulating Integral in parallel using OPENMP
 
-To compile:
+To compile in linux:
 
 ```sh
-gcc integral.c -fopenmp -o integral
-
-./integral
+make run
 ```
+
