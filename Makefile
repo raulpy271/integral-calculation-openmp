@@ -1,11 +1,11 @@
 
 CC=gcc
-FLAGS=-fopenmp
+FLAGS=-fopenmp -lm
 
 clean:
 	rm -rf build/integral.o
 
 run:
-	$(CC) $(FLAGS) integral.c -o build/integral.o
+	$(CC) -o build/integral.o integral.c $(FLAGS)
 	./build/integral.o
 
